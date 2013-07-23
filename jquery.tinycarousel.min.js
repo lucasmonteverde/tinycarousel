@@ -1,5 +1,5 @@
 /*!
- * Tiny Carousel 1.9.1
+ * Tiny Carousel 1.9.2
  * http://www.baijs.nl/tinycarousel
  *
  * Copyright 2010, Maarten Baijs
@@ -7,7 +7,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.opensource.org/licenses/gpl-2.0.php
  *
- * Modified: Lucas Monteverde - 10/06/12
+ * Modified: Lucas Monteverde - 23/06/12
  * Depends on library: jQuery
  */
  
