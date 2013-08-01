@@ -1,5 +1,5 @@
 /*!
- * Tiny Carousel 1.9.2
+ * Tiny Carousel 1.9.3
  * http://www.baijs.nl/tinycarousel
  *
  * Copyright 2010, Maarten Baijs
@@ -7,10 +7,10 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.opensource.org/licenses/gpl-2.0.php
  *
- * Modified: Lucas Monteverde - 23/06/12
+ * Modified: Lucas Monteverde - 01/08/13
  * Depends on library: jQuery
  */
- 
+
 (function($){
 	$.tiny = $.tiny || { };
 	
@@ -38,7 +38,7 @@
 	};
 	$.fn.tinycarousel_start = function(){ $(this).data('tcl').start(); };
 	$.fn.tinycarousel_stop = function(){ $(this).data('tcl').stop(); };
-	$.fn.tinycarousel_move = function(iNum, incremental){ $(this).data('tcl').move(iNum,!incremental); };
+	$.fn.tinycarousel_move = function(iNum, incremental){ return $(this).data('tcl').move(iNum,!incremental); };
 	$.fn.tinycarousel_reload = function(){ $(this).data('tcl').reload(); };
 	$.fn.tinycarousel_prepend = function(){ $(this).data('tcl').prepend(); } 
 	
@@ -125,6 +125,7 @@
 				});
 				setButtons();
 				setTimer();
+				return true;
 			}
 		};
 		
